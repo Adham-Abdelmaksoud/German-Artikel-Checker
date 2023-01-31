@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <Button layoutX="185.0" layoutY="315.0" mnemonicParsing="false" onAction="#skipClicked" text="Skip">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="wordLabel" alignment="CENTER" layoutX="96.0" layoutY="81.0" prefHeight="63.0" prefWidth="425.0" text="xjdhvkjfhghkjdf4">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="152.0" layoutY="29.0" prefHeight="36.0" prefWidth="314.0" text="Label" textFill="RED">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="derButton" layoutX="81.0" layoutY="213.0" mnemonicParsing="false" onAction="#answerChosen" text="Der">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="dasButton" layoutX="264.0" layoutY="213.0" mnemonicParsing="false" onAction="#answerChosen" text="Das">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="dieButton" layoutX="433.0" layoutY="213.0" mnemonicParsing="false" onAction="#answerChosen" text="Die">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </RadioButton>
+      <Ellipse fx:id="derEllipse" layoutX="124.0" layoutY="231.0" radiusX="61.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1f93ff00" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Ellipse>
+      <Ellipse fx:id="dasEllipse" layoutX="309.0" layoutY="231.0" radiusX="61.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1f93ff00" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Ellipse>
+      <Ellipse fx:id="dieEllipse" layoutX="474.0" layoutY="231.0" radiusX="61.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1f93ff00" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Ellipse>
+      <Button layoutX="367.0" layoutY="315.0" mnemonicParsing="false" onAction="#exitClicked" text="Exit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
